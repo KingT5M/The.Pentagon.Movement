@@ -1,0 +1,2 @@
+# The.Pentagon.Movement
+SAFELY HARNESSING AI FOR MONETARY GAIN.
