@@ -15,12 +15,15 @@ text = model.generate(
     top_p=0.9,
 )
 
+
 # Print the generated text
 print(text)
 
-# Convert the output tensor to a string
-text_string = text.decode("utf-8")
+# Decode the output tokens
+decoded_text = tokenizer.decode(text[0], skip_special_tokens=True)
 
-# Print the generated text
-print(text_string)
+# Change the encoding to UTF-8
+cleaned_text = decoded_text.encode("utf-8")
 
+# Print the cleaned text
+print(cleaned_text)
