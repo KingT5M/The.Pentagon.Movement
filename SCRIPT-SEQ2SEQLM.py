@@ -8,7 +8,8 @@ tokenizer = AutoTokenizer.from_pretrained("facebook/bart-base")
 # Generate text
 text = model.generate(
     input_ids=tokenizer("The video script is as follows:", return_tensors="pt").input_ids,
-    max_length=512,
+    max_length=1024,
+    temperature=8.0,
     eos_token_id=1,
     do_sample=True,
     top_k=50,
