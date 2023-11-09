@@ -29,7 +29,7 @@ if __name__ == "__main__":
         "Welcome back to The Freedom of Information!,",
     ]
     ending_lines = [
-        "Follow us for more fascinating stories about the past!",
+        "Follow us for more enchanting romantic tales!",
     ]
 
     process_text_file(input_file, output_file, beginning_lines, ending_lines)
